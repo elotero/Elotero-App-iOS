@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A6CEDF2522AD8AC3004D08C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CEDF2422AD8AC3004D08C3 /* AppDelegate.swift */; };
+		A6CEDF2722AD8AC3004D08C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CEDF2622AD8AC3004D08C3 /* ViewController.swift */; };
+		A6CEDF2A22AD8AC3004D08C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6CEDF2822AD8AC3004D08C3 /* Main.storyboard */; };
+		A6CEDF2C22AD8AC4004D08C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6CEDF2B22AD8AC4004D08C3 /* Assets.xcassets */; };
+		A6CEDF2F22AD8AC4004D08C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6CEDF2D22AD8AC4004D08C3 /* LaunchScreen.storyboard */; };
+		A6CEDF3A22AD8AC4004D08C3 /* EloteroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CEDF3922AD8AC4004D08C3 /* EloteroTests.swift */; };
+		A6CEDF4522AD8AC4004D08C3 /* EloteroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CEDF4422AD8AC4004D08C3 /* EloteroUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6CEDF3622AD8AC4004D08C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6CEDF1922AD8AC2004D08C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6CEDF2022AD8AC3004D08C3;
+			remoteInfo = Elotero;
+		};
+		A6CEDF4122AD8AC4004D08C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6CEDF1922AD8AC2004D08C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6CEDF2022AD8AC3004D08C3;
+			remoteInfo = Elotero;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A6CEDF2122AD8AC3004D08C3 /* Elotero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elotero.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6CEDF2422AD8AC3004D08C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A6CEDF2622AD8AC3004D08C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A6CEDF2922AD8AC3004D08C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A6CEDF2B22AD8AC4004D08C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6CEDF2E22AD8AC4004D08C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A6CEDF3022AD8AC4004D08C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6CEDF3522AD8AC4004D08C3 /* EloteroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EloteroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6CEDF3922AD8AC4004D08C3 /* EloteroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EloteroTests.swift; sourceTree = "<group>"; };
+		A6CEDF3B22AD8AC4004D08C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6CEDF4022AD8AC4004D08C3 /* EloteroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EloteroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6CEDF4422AD8AC4004D08C3 /* EloteroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EloteroUITests.swift; sourceTree = "<group>"; };
+		A6CEDF4622AD8AC4004D08C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6CEDF1E22AD8AC3004D08C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6CEDF3222AD8AC4004D08C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6CEDF3D22AD8AC4004D08C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6CEDF1822AD8AC2004D08C3 = {
+			isa = PBXGroup;
+			children = (
+				A6CEDF2322AD8AC3004D08C3 /* Elotero */,
+				A6CEDF3822AD8AC4004D08C3 /* EloteroTests */,
+				A6CEDF4322AD8AC4004D08C3 /* EloteroUITests */,
+				A6CEDF2222AD8AC3004D08C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6CEDF2222AD8AC3004D08C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6CEDF2122AD8AC3004D08C3 /* Elotero.app */,
+				A6CEDF3522AD8AC4004D08C3 /* EloteroTests.xctest */,
+				A6CEDF4022AD8AC4004D08C3 /* EloteroUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6CEDF2322AD8AC3004D08C3 /* Elotero */ = {
+			isa = PBXGroup;
+			children = (
+				A6CEDF2422AD8AC3004D08C3 /* AppDelegate.swift */,
+				A6CEDF2622AD8AC3004D08C3 /* ViewController.swift */,
+				A6CEDF2822AD8AC3004D08C3 /* Main.storyboard */,
+				A6CEDF2B22AD8AC4004D08C3 /* Assets.xcassets */,
+				A6CEDF2D22AD8AC4004D08C3 /* LaunchScreen.storyboard */,
+				A6CEDF3022AD8AC4004D08C3 /* Info.plist */,
+			);
+			path = Elotero;
+			sourceTree = "<group>";
+		};
+		A6CEDF3822AD8AC4004D08C3 /* EloteroTests */ = {
+			isa = PBXGroup;
+			children = (
+				A6CEDF3922AD8AC4004D08C3 /* EloteroTests.swift */,
+				A6CEDF3B22AD8AC4004D08C3 /* Info.plist */,
+			);
+			path = EloteroTests;
+			sourceTree = "<group>";
+		};
+		A6CEDF4322AD8AC4004D08C3 /* EloteroUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A6CEDF4422AD8AC4004D08C3 /* EloteroUITests.swift */,
+				A6CEDF4622AD8AC4004D08C3 /* Info.plist */,
+			);
+			path = EloteroUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6CEDF2022AD8AC3004D08C3 /* Elotero */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6CEDF4922AD8AC4004D08C3 /* Build configuration list for PBXNativeTarget "Elotero" */;
+			buildPhases = (
+				A6CEDF1D22AD8AC3004D08C3 /* Sources */,
+				A6CEDF1E22AD8AC3004D08C3 /* Frameworks */,
+				A6CEDF1F22AD8AC3004D08C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Elotero;
+			productName = Elotero;
+			productReference = A6CEDF2122AD8AC3004D08C3 /* Elotero.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6CEDF3422AD8AC4004D08C3 /* EloteroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6CEDF4C22AD8AC4004D08C3 /* Build configuration list for PBXNativeTarget "EloteroTests" */;
+			buildPhases = (
+				A6CEDF3122AD8AC4004D08C3 /* Sources */,
+				A6CEDF3222AD8AC4004D08C3 /* Frameworks */,
+				A6CEDF3322AD8AC4004D08C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6CEDF3722AD8AC4004D08C3 /* PBXTargetDependency */,
+			);
+			name = EloteroTests;
+			productName = EloteroTests;
+			productReference = A6CEDF3522AD8AC4004D08C3 /* EloteroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A6CEDF3F22AD8AC4004D08C3 /* EloteroUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6CEDF4F22AD8AC4004D08C3 /* Build configuration list for PBXNativeTarget "EloteroUITests" */;
+			buildPhases = (
+				A6CEDF3C22AD8AC4004D08C3 /* Sources */,
+				A6CEDF3D22AD8AC4004D08C3 /* Frameworks */,
+				A6CEDF3E22AD8AC4004D08C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6CEDF4222AD8AC4004D08C3 /* PBXTargetDependency */,
+			);
+			name = EloteroUITests;
+			productName = EloteroUITests;
+			productReference = A6CEDF4022AD8AC4004D08C3 /* EloteroUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6CEDF1922AD8AC2004D08C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Chris Martinez";
+				TargetAttributes = {
+					A6CEDF2022AD8AC3004D08C3 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					A6CEDF3422AD8AC4004D08C3 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = A6CEDF2022AD8AC3004D08C3;
+					};
+					A6CEDF3F22AD8AC4004D08C3 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = A6CEDF2022AD8AC3004D08C3;
+					};
+				};
+			};
+			buildConfigurationList = A6CEDF1C22AD8AC2004D08C3 /* Build configuration list for PBXProject "Elotero" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A6CEDF1822AD8AC2004D08C3;
+			productRefGroup = A6CEDF2222AD8AC3004D08C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6CEDF2022AD8AC3004D08C3 /* Elotero */,
+				A6CEDF3422AD8AC4004D08C3 /* EloteroTests */,
+				A6CEDF3F22AD8AC4004D08C3 /* EloteroUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6CEDF1F22AD8AC3004D08C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6CEDF2F22AD8AC4004D08C3 /* LaunchScreen.storyboard in Resources */,
+				A6CEDF2C22AD8AC4004D08C3 /* Assets.xcassets in Resources */,
+				A6CEDF2A22AD8AC3004D08C3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6CEDF3322AD8AC4004D08C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6CEDF3E22AD8AC4004D08C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6CEDF1D22AD8AC3004D08C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6CEDF2722AD8AC3004D08C3 /* ViewController.swift in Sources */,
+				A6CEDF2522AD8AC3004D08C3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6CEDF3122AD8AC4004D08C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6CEDF3A22AD8AC4004D08C3 /* EloteroTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6CEDF3C22AD8AC4004D08C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6CEDF4522AD8AC4004D08C3 /* EloteroUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6CEDF3722AD8AC4004D08C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6CEDF2022AD8AC3004D08C3 /* Elotero */;
+			targetProxy = A6CEDF3622AD8AC4004D08C3 /* PBXContainerItemProxy */;
+		};
+		A6CEDF4222AD8AC4004D08C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6CEDF2022AD8AC3004D08C3 /* Elotero */;
+			targetProxy = A6CEDF4122AD8AC4004D08C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A6CEDF2822AD8AC3004D08C3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6CEDF2922AD8AC3004D08C3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A6CEDF2D22AD8AC4004D08C3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6CEDF2E22AD8AC4004D08C3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6CEDF4722AD8AC4004D08C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A6CEDF4822AD8AC4004D08C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6CEDF4A22AD8AC4004D08C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XLNX78VJ5X;
+				INFOPLIST_FILE = Elotero/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Elotero;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6CEDF4B22AD8AC4004D08C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XLNX78VJ5X;
+				INFOPLIST_FILE = Elotero/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Elotero;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A6CEDF4D22AD8AC4004D08C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XLNX78VJ5X;
+				INFOPLIST_FILE = EloteroTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.EloteroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Elotero.app/Elotero";
+			};
+			name = Debug;
+		};
+		A6CEDF4E22AD8AC4004D08C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XLNX78VJ5X;
+				INFOPLIST_FILE = EloteroTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.EloteroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Elotero.app/Elotero";
+			};
+			name = Release;
+		};
+		A6CEDF5022AD8AC4004D08C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XLNX78VJ5X;
+				INFOPLIST_FILE = EloteroUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.EloteroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Elotero;
+			};
+			name = Debug;
+		};
+		A6CEDF5122AD8AC4004D08C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XLNX78VJ5X;
+				INFOPLIST_FILE = EloteroUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.EloteroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Elotero;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6CEDF1C22AD8AC2004D08C3 /* Build configuration list for PBXProject "Elotero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6CEDF4722AD8AC4004D08C3 /* Debug */,
+				A6CEDF4822AD8AC4004D08C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6CEDF4922AD8AC4004D08C3 /* Build configuration list for PBXNativeTarget "Elotero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6CEDF4A22AD8AC4004D08C3 /* Debug */,
+				A6CEDF4B22AD8AC4004D08C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6CEDF4C22AD8AC4004D08C3 /* Build configuration list for PBXNativeTarget "EloteroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6CEDF4D22AD8AC4004D08C3 /* Debug */,
+				A6CEDF4E22AD8AC4004D08C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6CEDF4F22AD8AC4004D08C3 /* Build configuration list for PBXNativeTarget "EloteroUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6CEDF5022AD8AC4004D08C3 /* Debug */,
+				A6CEDF5122AD8AC4004D08C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A6CEDF1922AD8AC2004D08C3 /* Project object */;
+}
