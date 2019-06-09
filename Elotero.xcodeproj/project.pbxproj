@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DD2932D39425C8EF37E473E /* Pods_EloteroUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 669D2154BE4881657DF2378B /* Pods_EloteroUITests.framework */; };
+		1E97ECBA5A30E59D4CA0259F /* Pods_EloteroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 482F8B854C84437FEBC8DEDF /* Pods_EloteroTests.framework */; };
+		5C760479B984EA0D4D03FE3A /* Pods_Elotero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77197C9E80F893F2655965E6 /* Pods_Elotero.framework */; };
 		A6CEDF2522AD8AC3004D08C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CEDF2422AD8AC3004D08C3 /* AppDelegate.swift */; };
 		A6CEDF2722AD8AC3004D08C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CEDF2622AD8AC3004D08C3 /* ViewController.swift */; };
 		A6CEDF2A22AD8AC3004D08C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6CEDF2822AD8AC3004D08C3 /* Main.storyboard */; };
@@ -14,6 +17,10 @@
 		A6CEDF2F22AD8AC4004D08C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6CEDF2D22AD8AC4004D08C3 /* LaunchScreen.storyboard */; };
 		A6CEDF3A22AD8AC4004D08C3 /* EloteroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CEDF3922AD8AC4004D08C3 /* EloteroTests.swift */; };
 		A6CEDF4522AD8AC4004D08C3 /* EloteroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CEDF4422AD8AC4004D08C3 /* EloteroUITests.swift */; };
+		A6CEDF5522ADA857004D08C3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CEDF5422ADA857004D08C3 /* LoginViewController.swift */; };
+		A6D7FC1722ADAB48000503B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6D7FC1622ADAB48000503B8 /* GoogleService-Info.plist */; };
+		A6D7FC1822ADAB48000503B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6D7FC1622ADAB48000503B8 /* GoogleService-Info.plist */; };
+		A6D7FC1922ADAB48000503B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6D7FC1622ADAB48000503B8 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18AC705E62C1903B0118D9CF /* Pods-Elotero.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elotero.release.xcconfig"; path = "Pods/Target Support Files/Pods-Elotero/Pods-Elotero.release.xcconfig"; sourceTree = "<group>"; };
+		482F8B854C84437FEBC8DEDF /* Pods_EloteroTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EloteroTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B15F0AE8D126D53A8DE430B /* Pods-EloteroTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EloteroTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EloteroTests/Pods-EloteroTests.debug.xcconfig"; sourceTree = "<group>"; };
+		669D2154BE4881657DF2378B /* Pods_EloteroUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EloteroUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77197C9E80F893F2655965E6 /* Pods_Elotero.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elotero.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96747132DEDF85E695C9FE95 /* Pods-EloteroUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EloteroUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EloteroUITests/Pods-EloteroUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A1C3EC96F0AFBBC4AE4C20DE /* Pods-EloteroUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EloteroUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EloteroUITests/Pods-EloteroUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A6CEDF2122AD8AC3004D08C3 /* Elotero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elotero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6CEDF2422AD8AC3004D08C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6CEDF2622AD8AC3004D08C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +61,10 @@
 		A6CEDF4022AD8AC4004D08C3 /* EloteroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EloteroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6CEDF4422AD8AC4004D08C3 /* EloteroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EloteroUITests.swift; sourceTree = "<group>"; };
 		A6CEDF4622AD8AC4004D08C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6CEDF5422ADA857004D08C3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A6D7FC1622ADAB48000503B8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F27F23CB599E168EAA9E823A /* Pods-Elotero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elotero.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Elotero/Pods-Elotero.debug.xcconfig"; sourceTree = "<group>"; };
+		FFD21029F49C0755BBE68DC2 /* Pods-EloteroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EloteroTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EloteroTests/Pods-EloteroTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C760479B984EA0D4D03FE3A /* Pods_Elotero.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E97ECBA5A30E59D4CA0259F /* Pods_EloteroTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +88,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DD2932D39425C8EF37E473E /* Pods_EloteroUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B6E3AFEF56508F831DFFEC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77197C9E80F893F2655965E6 /* Pods_Elotero.framework */,
+				482F8B854C84437FEBC8DEDF /* Pods_EloteroTests.framework */,
+				669D2154BE4881657DF2378B /* Pods_EloteroUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		897A8636438DB9FC6B743B50 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F27F23CB599E168EAA9E823A /* Pods-Elotero.debug.xcconfig */,
+				18AC705E62C1903B0118D9CF /* Pods-Elotero.release.xcconfig */,
+				4B15F0AE8D126D53A8DE430B /* Pods-EloteroTests.debug.xcconfig */,
+				FFD21029F49C0755BBE68DC2 /* Pods-EloteroTests.release.xcconfig */,
+				A1C3EC96F0AFBBC4AE4C20DE /* Pods-EloteroUITests.debug.xcconfig */,
+				96747132DEDF85E695C9FE95 /* Pods-EloteroUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A6CEDF1822AD8AC2004D08C3 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +125,8 @@
 				A6CEDF3822AD8AC4004D08C3 /* EloteroTests */,
 				A6CEDF4322AD8AC4004D08C3 /* EloteroUITests */,
 				A6CEDF2222AD8AC3004D08C3 /* Products */,
+				897A8636438DB9FC6B743B50 /* Pods */,
+				3B6E3AFEF56508F831DFFEC2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,7 +148,9 @@
 				A6CEDF2822AD8AC3004D08C3 /* Main.storyboard */,
 				A6CEDF2B22AD8AC4004D08C3 /* Assets.xcassets */,
 				A6CEDF2D22AD8AC4004D08C3 /* LaunchScreen.storyboard */,
+				A6D7FC1622ADAB48000503B8 /* GoogleService-Info.plist */,
 				A6CEDF3022AD8AC4004D08C3 /* Info.plist */,
+				A6CEDF5422ADA857004D08C3 /* LoginViewController.swift */,
 			);
 			path = Elotero;
 			sourceTree = "<group>";
@@ -132,9 +180,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6CEDF4922AD8AC4004D08C3 /* Build configuration list for PBXNativeTarget "Elotero" */;
 			buildPhases = (
+				3CBEEBE8552D5A1F8912D58D /* [CP] Check Pods Manifest.lock */,
 				A6CEDF1D22AD8AC3004D08C3 /* Sources */,
 				A6CEDF1E22AD8AC3004D08C3 /* Frameworks */,
 				A6CEDF1F22AD8AC3004D08C3 /* Resources */,
+				B03BBF4E24BA3289332B601A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +199,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6CEDF4C22AD8AC4004D08C3 /* Build configuration list for PBXNativeTarget "EloteroTests" */;
 			buildPhases = (
+				E411B2180054023D59D0CC57 /* [CP] Check Pods Manifest.lock */,
 				A6CEDF3122AD8AC4004D08C3 /* Sources */,
 				A6CEDF3222AD8AC4004D08C3 /* Frameworks */,
 				A6CEDF3322AD8AC4004D08C3 /* Resources */,
@@ -167,6 +218,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6CEDF4F22AD8AC4004D08C3 /* Build configuration list for PBXNativeTarget "EloteroUITests" */;
 			buildPhases = (
+				BC7D25CC40A0A22DE3814BA2 /* [CP] Check Pods Manifest.lock */,
 				A6CEDF3C22AD8AC4004D08C3 /* Sources */,
 				A6CEDF3D22AD8AC4004D08C3 /* Frameworks */,
 				A6CEDF3E22AD8AC4004D08C3 /* Resources */,
@@ -230,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6CEDF2F22AD8AC4004D08C3 /* LaunchScreen.storyboard in Resources */,
+				A6D7FC1722ADAB48000503B8 /* GoogleService-Info.plist in Resources */,
 				A6CEDF2C22AD8AC4004D08C3 /* Assets.xcassets in Resources */,
 				A6CEDF2A22AD8AC3004D08C3 /* Main.storyboard in Resources */,
 			);
@@ -239,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6D7FC1822ADAB48000503B8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,16 +300,111 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6D7FC1922ADAB48000503B8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CBEEBE8552D5A1F8912D58D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Elotero-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B03BBF4E24BA3289332B601A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Elotero/Pods-Elotero-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Elotero/Pods-Elotero-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC7D25CC40A0A22DE3814BA2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EloteroUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E411B2180054023D59D0CC57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EloteroTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A6CEDF1D22AD8AC3004D08C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6CEDF5522ADA857004D08C3 /* LoginViewController.swift in Sources */,
 				A6CEDF2722AD8AC3004D08C3 /* ViewController.swift in Sources */,
 				A6CEDF2522AD8AC3004D08C3 /* AppDelegate.swift in Sources */,
 			);
@@ -430,6 +579,7 @@
 		};
 		A6CEDF4A22AD8AC4004D08C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F27F23CB599E168EAA9E823A /* Pods-Elotero.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +598,7 @@
 		};
 		A6CEDF4B22AD8AC4004D08C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18AC705E62C1903B0118D9CF /* Pods-Elotero.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +617,7 @@
 		};
 		A6CEDF4D22AD8AC4004D08C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B15F0AE8D126D53A8DE430B /* Pods-EloteroTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +639,7 @@
 		};
 		A6CEDF4E22AD8AC4004D08C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFD21029F49C0755BBE68DC2 /* Pods-EloteroTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +661,7 @@
 		};
 		A6CEDF5022AD8AC4004D08C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1C3EC96F0AFBBC4AE4C20DE /* Pods-EloteroUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +682,7 @@
 		};
 		A6CEDF5122AD8AC4004D08C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96747132DEDF85E695C9FE95 /* Pods-EloteroUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

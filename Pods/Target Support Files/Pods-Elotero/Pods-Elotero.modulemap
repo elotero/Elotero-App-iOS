@@ -1,0 +1,6 @@
+framework module Pods_Elotero {
+  umbrella header "Pods-Elotero-umbrella.h"
+
+  export *
+  module * { export * }
+}
