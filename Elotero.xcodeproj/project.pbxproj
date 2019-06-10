@@ -11,7 +11,6 @@
 		1E97ECBA5A30E59D4CA0259F /* Pods_EloteroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 482F8B854C84437FEBC8DEDF /* Pods_EloteroTests.framework */; };
 		5C760479B984EA0D4D03FE3A /* Pods_Elotero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77197C9E80F893F2655965E6 /* Pods_Elotero.framework */; };
 		A6CEDF2522AD8AC3004D08C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CEDF2422AD8AC3004D08C3 /* AppDelegate.swift */; };
-		A6CEDF2722AD8AC3004D08C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CEDF2622AD8AC3004D08C3 /* ViewController.swift */; };
 		A6CEDF2A22AD8AC3004D08C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6CEDF2822AD8AC3004D08C3 /* Main.storyboard */; };
 		A6CEDF2C22AD8AC4004D08C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6CEDF2B22AD8AC4004D08C3 /* Assets.xcassets */; };
 		A6CEDF2F22AD8AC4004D08C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6CEDF2D22AD8AC4004D08C3 /* LaunchScreen.storyboard */; };
@@ -21,6 +20,9 @@
 		A6D7FC1722ADAB48000503B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6D7FC1622ADAB48000503B8 /* GoogleService-Info.plist */; };
 		A6D7FC1822ADAB48000503B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6D7FC1622ADAB48000503B8 /* GoogleService-Info.plist */; };
 		A6D7FC1922ADAB48000503B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6D7FC1622ADAB48000503B8 /* GoogleService-Info.plist */; };
+		A6DFAB7622ADFC1F0029BFB4 /* ConsumerHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DFAB7522ADFC1F0029BFB4 /* ConsumerHomeViewController.swift */; };
+		A6DFAB7822ADFC450029BFB4 /* Consumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DFAB7722ADFC450029BFB4 /* Consumer.swift */; };
+		A6DFAB7D22ADFDD50029BFB4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DFAB7C22ADFDD50029BFB4 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +52,6 @@
 		A1C3EC96F0AFBBC4AE4C20DE /* Pods-EloteroUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EloteroUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EloteroUITests/Pods-EloteroUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A6CEDF2122AD8AC3004D08C3 /* Elotero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elotero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6CEDF2422AD8AC3004D08C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A6CEDF2622AD8AC3004D08C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A6CEDF2922AD8AC3004D08C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6CEDF2B22AD8AC4004D08C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6CEDF2E22AD8AC4004D08C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +64,10 @@
 		A6CEDF4622AD8AC4004D08C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6CEDF5422ADA857004D08C3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A6D7FC1622ADAB48000503B8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A6DFAB7522ADFC1F0029BFB4 /* ConsumerHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumerHomeViewController.swift; sourceTree = "<group>"; };
+		A6DFAB7722ADFC450029BFB4 /* Consumer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consumer.swift; sourceTree = "<group>"; };
+		A6DFAB7C22ADFDD50029BFB4 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A6DFAB7F22AE106A0029BFB4 /* sha256Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sha256Header.h; sourceTree = "<group>"; };
 		F27F23CB599E168EAA9E823A /* Pods-Elotero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elotero.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Elotero/Pods-Elotero.debug.xcconfig"; sourceTree = "<group>"; };
 		FFD21029F49C0755BBE68DC2 /* Pods-EloteroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EloteroTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EloteroTests/Pods-EloteroTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,14 +148,16 @@
 		A6CEDF2322AD8AC3004D08C3 /* Elotero */ = {
 			isa = PBXGroup;
 			children = (
+				A6DFAB7E22AE104A0029BFB4 /* Headers */,
+				A6DFAB7B22ADFC6A0029BFB4 /* Views */,
+				A6DFAB7A22ADFC5B0029BFB4 /* ViewControllers */,
+				A6DFAB7922ADFC4C0029BFB4 /* Models */,
 				A6CEDF2422AD8AC3004D08C3 /* AppDelegate.swift */,
-				A6CEDF2622AD8AC3004D08C3 /* ViewController.swift */,
 				A6CEDF2822AD8AC3004D08C3 /* Main.storyboard */,
 				A6CEDF2B22AD8AC4004D08C3 /* Assets.xcassets */,
 				A6CEDF2D22AD8AC4004D08C3 /* LaunchScreen.storyboard */,
 				A6D7FC1622ADAB48000503B8 /* GoogleService-Info.plist */,
 				A6CEDF3022AD8AC4004D08C3 /* Info.plist */,
-				A6CEDF5422ADA857004D08C3 /* LoginViewController.swift */,
 			);
 			path = Elotero;
 			sourceTree = "<group>";
@@ -171,6 +178,39 @@
 				A6CEDF4622AD8AC4004D08C3 /* Info.plist */,
 			);
 			path = EloteroUITests;
+			sourceTree = "<group>";
+		};
+		A6DFAB7922ADFC4C0029BFB4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A6DFAB7722ADFC450029BFB4 /* Consumer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A6DFAB7A22ADFC5B0029BFB4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A6CEDF5422ADA857004D08C3 /* LoginViewController.swift */,
+				A6DFAB7522ADFC1F0029BFB4 /* ConsumerHomeViewController.swift */,
+				A6DFAB7C22ADFDD50029BFB4 /* RegisterViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A6DFAB7B22ADFC6A0029BFB4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A6DFAB7E22AE104A0029BFB4 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				A6DFAB7F22AE106A0029BFB4 /* sha256Header.h */,
+			);
+			path = Headers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -404,8 +444,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6DFAB7822ADFC450029BFB4 /* Consumer.swift in Sources */,
+				A6DFAB7D22ADFDD50029BFB4 /* RegisterViewController.swift in Sources */,
 				A6CEDF5522ADA857004D08C3 /* LoginViewController.swift in Sources */,
-				A6CEDF2722AD8AC3004D08C3 /* ViewController.swift in Sources */,
+				A6DFAB7622ADFC1F0029BFB4 /* ConsumerHomeViewController.swift in Sources */,
 				A6CEDF2522AD8AC3004D08C3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -591,6 +633,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Elotero;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Elotero/Headers/sha256Header.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -610,6 +653,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Elotero;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Elotero/Headers/sha256Header.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
