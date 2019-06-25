@@ -10,6 +10,8 @@
 		1DD2932D39425C8EF37E473E /* Pods_EloteroUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 669D2154BE4881657DF2378B /* Pods_EloteroUITests.framework */; };
 		1E97ECBA5A30E59D4CA0259F /* Pods_EloteroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 482F8B854C84437FEBC8DEDF /* Pods_EloteroTests.framework */; };
 		5C760479B984EA0D4D03FE3A /* Pods_Elotero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77197C9E80F893F2655965E6 /* Pods_Elotero.framework */; };
+		A606CFCC22C1EB3300F9EFB4 /* ConsumerRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A606CFCB22C1EB3300F9EFB4 /* ConsumerRegisterViewController.swift */; };
+		A6C1843022C1D8BC00C0D7B3 /* Vendor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C1842F22C1D8BC00C0D7B3 /* Vendor.swift */; };
 		A6CEDF2522AD8AC3004D08C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CEDF2422AD8AC3004D08C3 /* AppDelegate.swift */; };
 		A6CEDF2A22AD8AC3004D08C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6CEDF2822AD8AC3004D08C3 /* Main.storyboard */; };
 		A6CEDF2C22AD8AC4004D08C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6CEDF2B22AD8AC4004D08C3 /* Assets.xcassets */; };
@@ -22,7 +24,8 @@
 		A6D7FC1922ADAB48000503B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6D7FC1622ADAB48000503B8 /* GoogleService-Info.plist */; };
 		A6DFAB7622ADFC1F0029BFB4 /* ConsumerHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DFAB7522ADFC1F0029BFB4 /* ConsumerHomeViewController.swift */; };
 		A6DFAB7822ADFC450029BFB4 /* Consumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DFAB7722ADFC450029BFB4 /* Consumer.swift */; };
-		A6DFAB7D22ADFDD50029BFB4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DFAB7C22ADFDD50029BFB4 /* RegisterViewController.swift */; };
+		A6DFAB7D22ADFDD50029BFB4 /* VendorRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DFAB7C22ADFDD50029BFB4 /* VendorRegisterViewController.swift */; };
+		A6E19B5222C1E9FB00DEDA93 /* FireBaseUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E19B5122C1E9FB00DEDA93 /* FireBaseUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,8 @@
 		77197C9E80F893F2655965E6 /* Pods_Elotero.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elotero.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96747132DEDF85E695C9FE95 /* Pods-EloteroUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EloteroUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EloteroUITests/Pods-EloteroUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A1C3EC96F0AFBBC4AE4C20DE /* Pods-EloteroUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EloteroUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EloteroUITests/Pods-EloteroUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A606CFCB22C1EB3300F9EFB4 /* ConsumerRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumerRegisterViewController.swift; sourceTree = "<group>"; };
+		A6C1842F22C1D8BC00C0D7B3 /* Vendor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vendor.swift; sourceTree = "<group>"; };
 		A6CEDF2122AD8AC3004D08C3 /* Elotero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elotero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6CEDF2422AD8AC3004D08C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6CEDF2922AD8AC3004D08C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -66,8 +71,9 @@
 		A6D7FC1622ADAB48000503B8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A6DFAB7522ADFC1F0029BFB4 /* ConsumerHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumerHomeViewController.swift; sourceTree = "<group>"; };
 		A6DFAB7722ADFC450029BFB4 /* Consumer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consumer.swift; sourceTree = "<group>"; };
-		A6DFAB7C22ADFDD50029BFB4 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A6DFAB7C22ADFDD50029BFB4 /* VendorRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorRegisterViewController.swift; sourceTree = "<group>"; };
 		A6DFAB7F22AE106A0029BFB4 /* sha256Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sha256Header.h; sourceTree = "<group>"; };
+		A6E19B5122C1E9FB00DEDA93 /* FireBaseUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseUtil.swift; sourceTree = "<group>"; };
 		F27F23CB599E168EAA9E823A /* Pods-Elotero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elotero.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Elotero/Pods-Elotero.debug.xcconfig"; sourceTree = "<group>"; };
 		FFD21029F49C0755BBE68DC2 /* Pods-EloteroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EloteroTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EloteroTests/Pods-EloteroTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,6 +154,7 @@
 		A6CEDF2322AD8AC3004D08C3 /* Elotero */ = {
 			isa = PBXGroup;
 			children = (
+				A6E19B5022C1E9E700DEDA93 /* Utilities */,
 				A6DFAB7E22AE104A0029BFB4 /* Headers */,
 				A6DFAB7B22ADFC6A0029BFB4 /* Views */,
 				A6DFAB7A22ADFC5B0029BFB4 /* ViewControllers */,
@@ -184,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				A6DFAB7722ADFC450029BFB4 /* Consumer.swift */,
+				A6C1842F22C1D8BC00C0D7B3 /* Vendor.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -193,7 +201,8 @@
 			children = (
 				A6CEDF5422ADA857004D08C3 /* LoginViewController.swift */,
 				A6DFAB7522ADFC1F0029BFB4 /* ConsumerHomeViewController.swift */,
-				A6DFAB7C22ADFDD50029BFB4 /* RegisterViewController.swift */,
+				A6DFAB7C22ADFDD50029BFB4 /* VendorRegisterViewController.swift */,
+				A606CFCB22C1EB3300F9EFB4 /* ConsumerRegisterViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -211,6 +220,14 @@
 				A6DFAB7F22AE106A0029BFB4 /* sha256Header.h */,
 			);
 			path = Headers;
+			sourceTree = "<group>";
+		};
+		A6E19B5022C1E9E700DEDA93 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A6E19B5122C1E9FB00DEDA93 /* FireBaseUtil.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,6 +395,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Elotero/Pods-Elotero-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -385,6 +403,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -444,11 +463,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6E19B5222C1E9FB00DEDA93 /* FireBaseUtil.swift in Sources */,
 				A6DFAB7822ADFC450029BFB4 /* Consumer.swift in Sources */,
-				A6DFAB7D22ADFDD50029BFB4 /* RegisterViewController.swift in Sources */,
+				A6DFAB7D22ADFDD50029BFB4 /* VendorRegisterViewController.swift in Sources */,
 				A6CEDF5522ADA857004D08C3 /* LoginViewController.swift in Sources */,
+				A6C1843022C1D8BC00C0D7B3 /* Vendor.swift in Sources */,
 				A6DFAB7622ADFC1F0029BFB4 /* ConsumerHomeViewController.swift in Sources */,
 				A6CEDF2522AD8AC3004D08C3 /* AppDelegate.swift in Sources */,
+				A606CFCC22C1EB3300F9EFB4 /* ConsumerRegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

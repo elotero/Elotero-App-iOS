@@ -23,8 +23,16 @@ class RegisterViewController: UIViewController {
     @IBAction func onSubmit(_ sender: Any) {
         
         //encrypt the data from the
-        var username = usernameTextField.text
-        var password = passwordTextField.text
+        let username = usernameTextField.text
+        let password = passwordTextField.text
+        
+        //check if data is valid
+        
+        let usernameData: Data! = username!.data(using: .utf8)
+        let passData: Data! = password!.data(using: .utf8)
+        
+        var encodedName = sha256(data: usernameData)
+        var encodedPass = sha256(data: passData)
         
         
     }
@@ -49,4 +57,9 @@ class RegisterViewController: UIViewController {
     }
     */
 
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let handle =  Auth.auth().addStateDidChangeListener { (auth, user) in
+    }
 }
