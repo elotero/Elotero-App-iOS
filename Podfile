@@ -10,6 +10,10 @@ target 'Elotero' do
 	pod 'Firebase/Core'
 	pod 'Firebase/Auth'
 	pod 'Firebase/Analytics'
+	pod 'Firebase/Core'
+	pod 'Firebase/Database'
+	pod 'Firebase/Crash'
+
 
   target 'EloteroTests' do
     inherit! :search_paths

@@ -8,11 +8,26 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
 
-class RegisterViewController: UIViewController {
+class VendorRegisterViewController: UIViewController {
 
+
+    @IBOutlet weak var emailTextField: UITextField!
+    
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var usernameTextField: UITextField!
+    
+    
+    
+    
+    var ref: DatabaseReference!
+
+    
+    
+    var handle: AuthStateDidChangeListenerHandle?
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,30 +38,19 @@ class RegisterViewController: UIViewController {
     @IBAction func onSubmit(_ sender: Any) {
         
         //encrypt the data from the
-        let username = usernameTextField.text
+        let email = emailTextField.text
         let password = passwordTextField.text
         
-        //check if data is valid
-        
-        let usernameData: Data! = username!.data(using: .utf8)
-        let passData: Data! = password!.data(using: .utf8)
-        
-        var encodedName = sha256(data: usernameData)
-        var encodedPass = sha256(data: passData)
-        
-        
-    }
-    
-    
-    
-    
-    func sha256(data : Data) -> Data {
-        var hash = [UInt8](repeating: 0,  count: Int(CC_SHA256_DIGEST_LENGTH))
-        data.withUnsafeBytes {
-            _ = CC_SHA256($0.baseAddress, CC_LONG(data.count), &hash)
+        //create new user:
+        Auth.auth().createUser(withEmail: email!, password: password!) { authResult, error in
+            // ...
         }
-        return Data(hash)
+    
     }
+    
+
+    
+    
     /*
     // MARK: - Navigation
 
@@ -60,6 +64,10 @@ class RegisterViewController: UIViewController {
     
     
     override func viewDidAppear(_ animated: Bool) {
-        let handle =  Auth.auth().addStateDidChangeListener { (auth, user) in
+        handle =  Auth.auth().addStateDidChangeListener { (auth, user) in
+    }
+}
+    override func viewDidDisappear(_ animated: Bool) {
+        Auth.auth().removeStateDidChangeListener(handle!)
     }
 }

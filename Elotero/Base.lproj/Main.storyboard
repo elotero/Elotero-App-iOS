@@ -56,6 +56,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Register"/>
                                 <connections>
+                                    <action selector="onRegisterSubmit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K2T-zK-N7I"/>
                                     <segue destination="PnN-TA-xyg" kind="show" identifier="RegisterSegue" id="P4w-QH-9rr"/>
                                 </connections>
                             </button>
@@ -75,10 +76,10 @@
             </objects>
             <point key="canvasLocation" x="138.40000000000001" y="65.217391304347828"/>
         </scene>
-        <!--Register View Controller-->
+        <!--Vendor Register View Controller-->
         <scene sceneID="0XC-SG-YpX">
             <objects>
-                <viewController id="PnN-TA-xyg" customClass="RegisterViewController" customModule="Elotero" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="PnN-TA-xyg" customClass="VendorRegisterViewController" customModule="Elotero" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A9I-CB-BnB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -96,13 +97,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dp4-We-mcM">
-                                <rect key="frame" x="148" y="124" width="79" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Knw-YC-ISb">
                                 <rect key="frame" x="150" y="210" width="74" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -118,13 +112,20 @@
                                     <action selector="onSubmit:" destination="PnN-TA-xyg" eventType="touchUpInside" id="4c9-fg-OU1"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dp4-We-mcM">
+                                <rect key="frame" x="167" y="124" width="41" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="llv-i2-JjI"/>
                     </view>
                     <connections>
-                        <outlet property="passwordTextField" destination="pcW-0X-IY9" id="MTH-uq-oL7"/>
-                        <outlet property="usernameTextField" destination="qPh-Pe-K6y" id="VgN-9z-Ug0"/>
+                        <outlet property="emailTextField" destination="qPh-Pe-K6y" id="XJG-iq-MAI"/>
+                        <outlet property="passwordTextField" destination="pcW-0X-IY9" id="BvE-Nr-dfs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yh0-8E-acz" userLabel="First Responder" sceneMemberID="firstResponder"/>
