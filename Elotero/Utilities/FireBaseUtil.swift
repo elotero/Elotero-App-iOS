@@ -25,27 +25,48 @@ class FirebaseUtil{
     }
     
     //DB Add to Users Function
-    func DBAddVendor(user: Vendor){
+    func DBAddVendor(vendor: Vendor){
         //
-    self.ref.child("users").child(user.uid).setValue(user)
+    self.ref.child("vendors").child(vendor.uid).setValue(vendor)
+    }
+    
+    
+    //DB Edit Vendor information
+    func DBEditVendorInfo(vendor: Vendor, newVendor: Vendor){
+        vendor
     }
     
     //DB Encrypt User Details
 /* TODO: Encrypt User Data in AES */
-    func DBEncryptSHA(user: Vendor) -> Vendor {
+    func DBEncryptSHA(vendor: Vendor) -> Vendor {
        var encryptedVendor : Vendor
-        encryptedVendor = user
+        encryptedVendor = vendor
         //encrypt data from user:
         return encryptedVendor
     }
     
     //DB Remove function
-    func DBRemoveVendor(user: Vendor){
-       let childRef =  self.ref.child("users").child(user.uid).ref
+    func DBRemoveVendor(vendor: Vendor){
+       let childRef =  self.ref.child("users").child(vendor.uid).ref
         childRef.removeValue()
     }
     
-    //remove 
+    
+    /* Careful with these functions */
+    
+    //DB Remove All Vendors
+    func DBRemoveAllVendors(){
+        let vendorRef = self.ref.child("vendors").ref
+        vendorRef.removeValue()
+    }
+    
+    //DB Remove All Consumers
+    func DBRemoveAllConsumers(){
+        let consumerRef = self.ref.child("users").ref
+        consumerRef.removeValue()
+    }
+    
+    
     
 }
 
