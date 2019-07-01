@@ -32,8 +32,18 @@ class FirebaseUtil{
     
     
     //DB Edit Vendor information
-    func DBEditVendorInfo(vendor: Vendor, newVendor: Vendor){
-        vendor
+    func DBEditVendorInfo(vendor: Vendor){
+        guard let key = self.ref.child("vendors").childByAutoId().key
+            else { return }
+        let update = [
+            "uid" : vendor.uid,
+            "firstName" : vendor.firstName,
+            "lastName" : vendor.lastName,
+            "email" : vendor.email,
+            "vendorName" : vendor.vendorName
+            ]
+        let childUpdates = ["/vendors/\(key)" : update]
+        ref.updateChildValues(childUpdates)
     }
     
     //DB Encrypt User Details
