@@ -18,6 +18,7 @@ class Vendor{
     var lastName : String
     var vendorName : String
     var email : String
+    var password: String
     
     //initialize
     init(VendorData : [String : Any]){
@@ -26,6 +27,9 @@ class Vendor{
         lastName = VendorData["lastName"] as! String
         vendorName = VendorData["vendorName"] as! String
         email = VendorData["email"] as! String
+        password = VendorData["password"] as! String
     }
+    
+    
     
 }
