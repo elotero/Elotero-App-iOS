@@ -29,8 +29,7 @@ class VendorRegisterViewController: UIViewController {
     
     
     var ref: DatabaseReference!
-
-    
+    var DBManager = FireBaseUtil()
     
     var handle: AuthStateDidChangeListenerHandle?
 
@@ -75,7 +74,7 @@ class VendorRegisterViewController: UIViewController {
         
     
         //Write to DB
-        FireBaseUtil.DBAddVendor(vendor: newVendor)
+        DBManager.DBAddVendor(vendor: newVendor)
         
     
 //        //create new user:
