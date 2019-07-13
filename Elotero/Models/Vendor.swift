@@ -22,7 +22,7 @@ class Vendor{
     
     //initialize
     init(VendorData : [String : Any]){
-        uid = VendorData["uid"] as! String
+        uid = VendorData["uid"] as? String ?? "No uid"
         firstName = VendorData["firstName"] as! String
         lastName = VendorData["lastName"] as! String
         vendorName = VendorData["vendorName"] as! String

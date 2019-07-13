@@ -26,7 +26,12 @@ class VendorRegisterViewController: UIViewController {
     @IBOutlet weak var vendorNameTextField: UITextField!
     
     
+    @IBAction func registerUser(_ sender: Any) {
+        
+        //register user
+    }
     
+    @IBOutlet weak var VendorCartName: UILabel!
     
     var ref: DatabaseReference!
     var DBManager = FireBaseUtil()
@@ -50,6 +55,11 @@ class VendorRegisterViewController: UIViewController {
 
     @IBAction func onSubmit(_ sender: Any) {
         
+        
+        
+
+        
+        
         //encrypt the data from the
         let email = emailTextField.text
         let password = passwordTextField.text
@@ -58,30 +68,45 @@ class VendorRegisterViewController: UIViewController {
         let vendorName = vendorNameTextField.text
         
         
+        
+        //create new user:
+        Auth.auth().createUser(withEmail: email!, password: password!) { authResult, error in
+            // ...
+            
+   
+        }
+        
+        Auth.auth().signIn(withEmail: email!, password: password!) { [weak self] user, error in
+            guard let strongSelf = self else { return }
+            // ...
+        }
+        
+        //asdoisajdljdsakl
+        
         //vendor data
         var vendorData : [String : Any] =
-        [
-            "email" : emailTextField!.text,
-            "password" : passwordTextField!.text,
-            "firstName" : firstNameTextField!.text,
-            "lastName" : lastNameTextField!.text,
-            "vendorName" : vendorNameTextField!.text
+            [
+                "email" : self.emailTextField!.text,
+                "password" : self.passwordTextField!.text,
+                "firstName" : self.firstNameTextField!.text,
+                "lastName" : self.lastNameTextField!.text,
+                "vendorName" : self.vendorNameTextField!.text
         ]
-        
         
         //setup new Vendor with objects
         var newVendor = Vendor(VendorData: vendorData)
         
-    
-        //Write to DB
-        DBManager.DBAddVendor(vendor: newVendor)
         
+        //Write to DB
+        self.DBManager.DBAddVendor(vendor: newVendor)
+        
+        
+        
+        
+        
+
     
-//        //create new user:
-//        Auth.auth().createUser(withEmail: email!, password: password!) { authResult, error in
-//            // ...
-//        }
-//
+
     }
     
 
