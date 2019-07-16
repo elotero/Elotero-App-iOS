@@ -12,7 +12,7 @@ import FirebaseAuth
 import FirebaseDatabase
 
 
-class FireBaseUtil{
+class DBManagerUtil{
     
     //connect to Database
     var ref :  DatabaseReference!

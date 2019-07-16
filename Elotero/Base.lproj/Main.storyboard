@@ -175,13 +175,6 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VendorCartName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXL-F5-EYO">
-                                                <rect key="frame" x="121" y="674" width="133" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9V-gv-dy8">
                                                 <rect key="frame" x="163" y="714" width="57" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -225,7 +218,6 @@
                     </view>
                     <size key="freeformSize" width="375" height="800"/>
                     <connections>
-                        <outlet property="VendorCartName" destination="nXL-F5-EYO" id="xoU-DG-dvR"/>
                         <outlet property="emailTextField" destination="qPh-Pe-K6y" id="XJG-iq-MAI"/>
                         <outlet property="firstNameTextField" destination="nmu-c7-2xT" id="9Ce-K1-xQD"/>
                         <outlet property="lastNameTextField" destination="5wE-wt-Rgq" id="fjX-Kn-ux4"/>
@@ -261,36 +253,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pE4-iG-bfh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="976.79999999999995" y="181.25937031484258"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="qug-iJ-qJ1">
-            <objects>
-                <viewController id="XIt-4z-WM5" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="RJ3-Eg-utX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="uNq-5l-Ft4"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="S5A-V8-wzi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1417" y="548"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="exb-OD-1Pd">
-            <objects>
-                <viewController id="7Ni-BN-xD3" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="c5F-tg-RgH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="6rF-cu-OLu"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ga3-Au-NlQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="137" y="1724"/>
         </scene>
     </scenes>
 </document>

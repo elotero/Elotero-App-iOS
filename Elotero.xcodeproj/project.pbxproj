@@ -25,7 +25,7 @@
 		A6DFAB7622ADFC1F0029BFB4 /* ConsumerHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DFAB7522ADFC1F0029BFB4 /* ConsumerHomeViewController.swift */; };
 		A6DFAB7822ADFC450029BFB4 /* Consumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DFAB7722ADFC450029BFB4 /* Consumer.swift */; };
 		A6DFAB7D22ADFDD50029BFB4 /* VendorRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DFAB7C22ADFDD50029BFB4 /* VendorRegisterViewController.swift */; };
-		A6E19B5222C1E9FB00DEDA93 /* FireBaseUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E19B5122C1E9FB00DEDA93 /* FireBaseUtil.swift */; };
+		A6E19B5222C1E9FB00DEDA93 /* DBManagerUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E19B5122C1E9FB00DEDA93 /* DBManagerUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,12 +68,13 @@
 		A6CEDF4422AD8AC4004D08C3 /* EloteroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EloteroUITests.swift; sourceTree = "<group>"; };
 		A6CEDF4622AD8AC4004D08C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6CEDF5422ADA857004D08C3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A6D078A622DD582900EDB2DA /* Elotero.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Elotero.entitlements; sourceTree = "<group>"; };
 		A6D7FC1622ADAB48000503B8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A6DFAB7522ADFC1F0029BFB4 /* ConsumerHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumerHomeViewController.swift; sourceTree = "<group>"; };
 		A6DFAB7722ADFC450029BFB4 /* Consumer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consumer.swift; sourceTree = "<group>"; };
 		A6DFAB7C22ADFDD50029BFB4 /* VendorRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorRegisterViewController.swift; sourceTree = "<group>"; };
 		A6DFAB7F22AE106A0029BFB4 /* sha256Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sha256Header.h; sourceTree = "<group>"; };
-		A6E19B5122C1E9FB00DEDA93 /* FireBaseUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseUtil.swift; sourceTree = "<group>"; };
+		A6E19B5122C1E9FB00DEDA93 /* DBManagerUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManagerUtil.swift; sourceTree = "<group>"; };
 		F27F23CB599E168EAA9E823A /* Pods-Elotero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elotero.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Elotero/Pods-Elotero.debug.xcconfig"; sourceTree = "<group>"; };
 		FFD21029F49C0755BBE68DC2 /* Pods-EloteroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EloteroTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EloteroTests/Pods-EloteroTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -154,6 +155,7 @@
 		A6CEDF2322AD8AC3004D08C3 /* Elotero */ = {
 			isa = PBXGroup;
 			children = (
+				A6D078A622DD582900EDB2DA /* Elotero.entitlements */,
 				A6E19B5022C1E9E700DEDA93 /* Utilities */,
 				A6DFAB7E22AE104A0029BFB4 /* Headers */,
 				A6DFAB7B22ADFC6A0029BFB4 /* Views */,
@@ -225,7 +227,7 @@
 		A6E19B5022C1E9E700DEDA93 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				A6E19B5122C1E9FB00DEDA93 /* FireBaseUtil.swift */,
+				A6E19B5122C1E9FB00DEDA93 /* DBManagerUtil.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -302,6 +304,11 @@
 				TargetAttributes = {
 					A6CEDF2022AD8AC3004D08C3 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					A6CEDF3422AD8AC4004D08C3 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -469,7 +476,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6E19B5222C1E9FB00DEDA93 /* FireBaseUtil.swift in Sources */,
+				A6E19B5222C1E9FB00DEDA93 /* DBManagerUtil.swift in Sources */,
 				A6DFAB7822ADFC450029BFB4 /* Consumer.swift in Sources */,
 				A6DFAB7D22ADFDD50029BFB4 /* VendorRegisterViewController.swift in Sources */,
 				A6CEDF5522ADA857004D08C3 /* LoginViewController.swift in Sources */,
@@ -652,6 +659,7 @@
 			baseConfigurationReference = F27F23CB599E168EAA9E823A /* Pods-Elotero.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Elotero/Elotero.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XLNX78VJ5X;
 				INFOPLIST_FILE = Elotero/Info.plist;
@@ -672,6 +680,7 @@
 			baseConfigurationReference = 18AC705E62C1903B0118D9CF /* Pods-Elotero.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Elotero/Elotero.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XLNX78VJ5X;
 				INFOPLIST_FILE = Elotero/Info.plist;
