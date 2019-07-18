@@ -27,7 +27,16 @@ class DBManagerUtil{
     //DB Add to Users Function
     func DBAddVendor(vendor: Vendor){
         //
-    self.ref.child("vendors").child(vendor.uid).setValue(vendor)
+        startDBConnect()
+        let vendorData = [
+            "uid": vendor.uid,
+            "firstName" : vendor.firstName,
+            "lastName" : vendor.lastName,
+            "email" : vendor.email,
+            "vendorCartName" : vendor.vendorName
+        ]
+    self.ref.child("vendors").child(vendor.uid).setValue(vendorData)
+        print("ADDED VENDOR TO LIST")
     }
     
     

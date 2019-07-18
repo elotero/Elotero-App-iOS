@@ -66,7 +66,7 @@ class VendorRegisterViewController: UIViewController {
             return
         }
         
-        
+        print("BEFORE CREATING  USER")
         
         //create new user:
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
@@ -91,6 +91,8 @@ class VendorRegisterViewController: UIViewController {
                 
                 //Create Vendor Object
                 var newVendor = Vendor(VendorData: vendorData)
+                
+                print("CREATED VENDOR")
                 
                 //Write to DB
                 self!.DBManager.DBAddVendor(vendor: newVendor)
