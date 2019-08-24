@@ -18,19 +18,24 @@ class VendorRegisterDetailsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    var email : String = ""
+    var password : String = ""
+    
+    var ref: DatabaseReference!
+    var DBManager = DBManagerUtil()
+    
+    var handle: AuthStateDidChangeListenerHandle?
+    
+    
     @IBOutlet weak var firstNameTextField: UITextField!
-
+    
     @IBOutlet weak var lastNameTextField: UITextField!
-    
     @IBOutlet weak var vendorNameTextField: UITextField!
-    
     
     @IBAction func onSubmit(_ sender: Any) {
         //pass in the email / password functions
         guard
-            //encrypt the data from the
-           // let email = emailTextField.text,
-           // let password = passwordTextField.text,
             let firstName = firstNameTextField.text,
             let lastName = lastNameTextField.text,
             let vendorName = vendorNameTextField.text
@@ -43,7 +48,7 @@ class VendorRegisterDetailsViewController: UIViewController {
             // ...
             //Automatically Sign In
             
-            Auth.auth().signIn(withEmail: email, password: password) { [weak self] user, error in
+            Auth.auth().signIn(withEmail: self.email, password: self.password) { [weak self] user, error in
                 guard let strongSelf = self else { return }
                 // ...
                 //Create Database information based on uid
@@ -51,8 +56,8 @@ class VendorRegisterDetailsViewController: UIViewController {
                 //vendor data
                 var vendorData : [String : Any] =
                     [
-                        "email" : self!.emailTextField!.text,
-                        "password" : self!.passwordTextField!.text,
+                        "email" : self!.email,
+                        "password" : self!.password,
                         "firstName" : self!.firstNameTextField!.text,
                         "lastName" : self!.lastNameTextField!.text,
                         "vendorName" : self!.vendorNameTextField!.text
@@ -63,8 +68,6 @@ class VendorRegisterDetailsViewController: UIViewController {
                 
                 //Write to DB
                 self!.DBManager.DBAddVendor(vendor: newVendor)
-                
-                self!.performSegue(withIdentifier: "mapScreenSegue", sender: sender)
             }
             
         }

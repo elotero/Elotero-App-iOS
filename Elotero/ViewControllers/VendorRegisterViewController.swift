@@ -13,25 +13,13 @@ import FirebaseDatabase
 class VendorRegisterViewController: UIViewController {
 
 
+
     @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     @IBOutlet weak var passwordTextField: UITextField!
     
-    @IBOutlet weak var scrollView: UIScrollView!
     
-    @IBOutlet weak var firstNameTextField: UITextField!
-    
-    @IBOutlet weak var lastNameTextField: UITextField!
-    
-    @IBOutlet weak var vendorNameTextField: UITextField!
-    
-    
-    @IBAction func registerUser(_ sender: Any) {
-        
-        //register user
-    }
-    
-    @IBOutlet weak var VendorCartName: UILabel!
     
     var ref: DatabaseReference!
     var DBManager = DBManagerUtil()
@@ -43,65 +31,11 @@ class VendorRegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         scrollViewDidScroll(scrollView: scrollView)
-        
-        
         
 
         // Do any additional setup after loading the view.
     }
-    
-
-    @IBAction func onSubmit(_ sender: Any) {
-        
-    guard
-        //encrypt the data from the
-        let email = emailTextField.text,
-        let password = passwordTextField.text,
-        let firstName = firstNameTextField.text,
-        let lastName = lastNameTextField.text,
-        let vendorName = vendorNameTextField.text
-        else {
-            return
-        }
-        
-        //create new user:
-        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-            // ...
-            //Automatically Sign In
-            
-            Auth.auth().signIn(withEmail: email, password: password) { [weak self] user, error in
-                guard let strongSelf = self else { return }
-                // ...
-                //Create Database information based on uid
-                let uid = Auth.auth().currentUser?.uid
-                //vendor data
-                var vendorData : [String : Any] =
-                    [
-                        "email" : self!.emailTextField!.text,
-                        "password" : self!.passwordTextField!.text,
-                        "firstName" : self!.firstNameTextField!.text,
-                        "lastName" : self!.lastNameTextField!.text,
-                        "vendorName" : self!.vendorNameTextField!.text
-                ]
-                
-                //Create Vendor Object
-                var newVendor = Vendor(VendorData: vendorData)
-                
-                //Write to DB
-                self!.DBManager.DBAddVendor(vendor: newVendor)
-                
-                self!.performSegue(withIdentifier: "mapScreenSegue", sender: sender)
-            }
-            
-        }
-       
-
-    }
-    
-
-    
     
     /*
     // MARK: - Navigation
@@ -120,10 +54,10 @@ class VendorRegisterViewController: UIViewController {
     */
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.destination = VendorRegisterDetailsViewController{
-            let viewController = segue.destination? as VendorRegisterDetailsViewController
-            viewController.username = userNameTextField.text
-            viewController.password = passwordTextField.text
+        if segue.destination is VendorRegisterDetailsViewController{
+            let viewController = segue.destination as! VendorRegisterDetailsViewController
+            viewController.email = emailTextField.text!
+            viewController.password = passwordTextField.text!
         }
     }
     

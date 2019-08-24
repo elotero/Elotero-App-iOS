@@ -167,12 +167,9 @@
                         <viewLayoutGuide key="safeArea" id="llv-i2-JjI"/>
                     </view>
                     <connections>
-                        <outlet property="emailTextField" destination="qPh-Pe-K6y" id="XJG-iq-MAI"/>
-                        <outlet property="firstNameTextField" destination="nmu-c7-2xT" id="9Ce-K1-xQD"/>
-                        <outlet property="lastNameTextField" destination="5wE-wt-Rgq" id="fjX-Kn-ux4"/>
-                        <outlet property="passwordTextField" destination="pcW-0X-IY9" id="BvE-Nr-dfs"/>
+                        <outlet property="emailTextField" destination="qPh-Pe-K6y" id="v32-Pg-LDo"/>
+                        <outlet property="passwordTextField" destination="pcW-0X-IY9" id="9Xy-cA-5Ec"/>
                         <outlet property="scrollView" destination="ex1-EB-gRa" id="82z-41-7Hz"/>
-                        <outlet property="vendorNameTextField" destination="P7T-XF-4hX" id="o5o-L8-6Kn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yh0-8E-acz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -201,26 +198,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nmu-c7-2xT">
-                                <rect key="frame" x="100" y="273" width="176" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="firstNameTextField:" destination="Vj1-zy-42d" eventType="editingDidEnd" id="uc7-Db-i9y"/>
-                                </connections>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5wE-wt-Rgq">
-                                <rect key="frame" x="100" y="391" width="176" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="lastNameTextField:" destination="Vj1-zy-42d" eventType="editingDidEnd" id="mNS-Ff-xp5"/>
-                                </connections>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vendor Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHV-1C-hSn">
                                 <rect key="frame" x="136" y="451" width="105" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -228,16 +205,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P7T-XF-4hX">
-                                <rect key="frame" x="100" y="493" width="176" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="vendorNameTextField:" destination="Vj1-zy-42d" eventType="editingDidEnd" id="VFJ-PH-qgx"/>
-                                </connections>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOQ-ao-sao">
                                 <rect key="frame" x="164" y="542" width="49" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -248,14 +215,35 @@
                                     <segue destination="2l4-6x-7rV" kind="show" identifier="mapScreenSegue" id="tE4-ak-SBU"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VMp-n3-tGc">
+                                <rect key="frame" x="139" y="281" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z2b-GY-PVT">
+                                <rect key="frame" x="140" y="394" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oio-Is-fSU">
+                                <rect key="frame" x="144" y="493" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="NGI-T1-LcA"/>
                     </view>
                     <connections>
-                        <outlet property="firstNameTextField" destination="nmu-c7-2xT" id="gpu-gA-laV"/>
-                        <outlet property="lastNameTextField" destination="5wE-wt-Rgq" id="9qC-Jd-Xub"/>
-                        <outlet property="vendorNameTextField" destination="P7T-XF-4hX" id="pTW-d1-oYn"/>
+                        <outlet property="firstNameTextField" destination="VMp-n3-tGc" id="wAD-wI-kzB"/>
+                        <outlet property="lastNameTextField" destination="Z2b-GY-PVT" id="VyJ-JT-ODA"/>
+                        <outlet property="vendorNameTextField" destination="oio-Is-fSU" id="5LR-Zy-Wmd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m6n-XC-4nk" userLabel="First Responder" sceneMemberID="firstResponder"/>
