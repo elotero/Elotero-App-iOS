@@ -113,6 +113,20 @@ class VendorRegisterViewController: UIViewController {
     }
     */
     
+    
+    
+    /*
+        WE NEED TO PASS EMAIL / PASSWORD WITH SEGUE FOR THE NEXT SCREEN
+    */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination = VendorRegisterDetailsViewController{
+            let viewController = segue.destination? as VendorRegisterDetailsViewController
+            viewController.username = userNameTextField.text
+            viewController.password = passwordTextField.text
+        }
+    }
+    
     func scrollViewDidScroll(scrollView: UIScrollView) {
         scrollView.contentOffset.x = 0
     }
