@@ -205,8 +205,8 @@
 			children = (
 				A6CEDF5422ADA857004D08C3 /* LoginViewController.swift */,
 				A6DFAB7522ADFC1F0029BFB4 /* ConsumerHomeViewController.swift */,
-				A6DFAB7C22ADFDD50029BFB4 /* VendorRegisterViewController.swift */,
 				A606CFCB22C1EB3300F9EFB4 /* ConsumerRegisterViewController.swift */,
+				A6DFAB7C22ADFDD50029BFB4 /* VendorRegisterViewController.swift */,
 				A616591422E1451700450194 /* VendorRegisterDetailsViewController.swift */,
 			);
 			path = ViewControllers;
