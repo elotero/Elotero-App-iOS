@@ -52,12 +52,12 @@ class VendorRegisterDetailsViewController: UIViewController {
                 guard let strongSelf = self else { return }
                 // ...
                 //Create Database information based on uid
-                let uid = Auth.auth().currentUser?.uid
+                let uid = authResult!.user.uid
                 //vendor data
                 var vendorData : [String : Any] =
                     [
                         "email" : self!.email,
-                        "password" : self!.password,
+                        "password" : self!.passwor  d,
                         "firstName" : self!.firstNameTextField!.text,
                         "lastName" : self!.lastNameTextField!.text,
                         "vendorName" : self!.vendorNameTextField!.text

@@ -10,6 +10,7 @@
 		1DD2932D39425C8EF37E473E /* Pods_EloteroUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 669D2154BE4881657DF2378B /* Pods_EloteroUITests.framework */; };
 		1E97ECBA5A30E59D4CA0259F /* Pods_EloteroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 482F8B854C84437FEBC8DEDF /* Pods_EloteroTests.framework */; };
 		5C760479B984EA0D4D03FE3A /* Pods_Elotero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77197C9E80F893F2655965E6 /* Pods_Elotero.framework */; };
+		A6018AC62373553F00C6F736 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6018AC52373553F00C6F736 /* MapViewController.swift */; };
 		A606CFCC22C1EB3300F9EFB4 /* ConsumerRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A606CFCB22C1EB3300F9EFB4 /* ConsumerRegisterViewController.swift */; };
 		A616591522E1451700450194 /* VendorRegisterDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A616591422E1451700450194 /* VendorRegisterDetailsViewController.swift */; };
 		A6C1843022C1D8BC00C0D7B3 /* Vendor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C1842F22C1D8BC00C0D7B3 /* Vendor.swift */; };
@@ -54,6 +55,7 @@
 		77197C9E80F893F2655965E6 /* Pods_Elotero.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elotero.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96747132DEDF85E695C9FE95 /* Pods-EloteroUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EloteroUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EloteroUITests/Pods-EloteroUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A1C3EC96F0AFBBC4AE4C20DE /* Pods-EloteroUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EloteroUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EloteroUITests/Pods-EloteroUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A6018AC52373553F00C6F736 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A606CFCB22C1EB3300F9EFB4 /* ConsumerRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumerRegisterViewController.swift; sourceTree = "<group>"; };
 		A616591422E1451700450194 /* VendorRegisterDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorRegisterDetailsViewController.swift; sourceTree = "<group>"; };
 		A6C1842F22C1D8BC00C0D7B3 /* Vendor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vendor.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				A606CFCB22C1EB3300F9EFB4 /* ConsumerRegisterViewController.swift */,
 				A6DFAB7C22ADFDD50029BFB4 /* VendorRegisterViewController.swift */,
 				A616591422E1451700450194 /* VendorRegisterDetailsViewController.swift */,
+				A6018AC52373553F00C6F736 /* MapViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -482,6 +485,7 @@
 				A616591522E1451700450194 /* VendorRegisterDetailsViewController.swift in Sources */,
 				A6E19B5222C1E9FB00DEDA93 /* DBManagerUtil.swift in Sources */,
 				A6DFAB7822ADFC450029BFB4 /* Consumer.swift in Sources */,
+				A6018AC62373553F00C6F736 /* MapViewController.swift in Sources */,
 				A6DFAB7D22ADFDD50029BFB4 /* VendorRegisterViewController.swift in Sources */,
 				A6CEDF5522ADA857004D08C3 /* LoginViewController.swift in Sources */,
 				A6C1843022C1D8BC00C0D7B3 /* Vendor.swift in Sources */,
